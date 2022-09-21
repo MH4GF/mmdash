@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <div>
-      <h1>Vite + React</h1>
-    </div>
-  )
+import { DashboardPage } from './features/dashboard/pages/DashboardPage'
+
+const App = () => {
+  return <DashboardPage />
 }
 
 export default App
