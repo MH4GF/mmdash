@@ -1,13 +1,40 @@
-import { Box, Heading, HStack, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  HStack,
+  StackDivider,
+  Stat,
+  StatArrow,
+  StatHelpText,
+  StatLabel,
+  StatNumber,
+} from '@chakra-ui/react'
 import { FC } from 'react'
 
 export const BalanceCard: FC = () => {
   return (
-    <HStack>
-      <Box p={5} shadow="md" borderWidth="1px">
-        <Heading fontSize="xl">MoneyForward</Heading>
-        <Text mt={4}>支出</Text>
-      </Box>
-    </HStack>
+    <Box>
+      <Heading as={'h1'} size="lg">
+        Money Forward
+      </Heading>
+      <HStack divider={<StackDivider />}>
+        <Stat shadow="md" p={4}>
+          <StatLabel>収入</StatLabel>
+          <StatNumber>100</StatNumber>
+          <StatHelpText>
+            先月比 10.5%
+            <StatArrow type="increase" />
+          </StatHelpText>
+        </Stat>
+        <Stat shadow="md" p={4}>
+          <StatLabel>支出</StatLabel>
+          <StatNumber>100</StatNumber>
+          <StatHelpText>
+            先月比 10.5%
+            <StatArrow type="increase" />
+          </StatHelpText>
+        </Stat>
+      </HStack>
+    </Box>
   )
 }
