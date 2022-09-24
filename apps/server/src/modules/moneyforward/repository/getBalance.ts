@@ -13,9 +13,22 @@ const signIn = async (page: Page) => {
   await page.click("input[type='submit']")
 }
 
-export const getBalance = async (): Promise<MoneyForwardBalance> => {
+let alreadySignInPage: Page | null
+
+const signInPage = async () => {
+  if (alreadySignInPage) {
+    return alreadySignInPage
+  }
+
   const page = await createNewPage()
-  signIn(page)
+  await signIn(page)
+  alreadySignInPage = page
+  return page
+}
+
+export const getBalance = async (): Promise<MoneyForwardBalance> => {
+  const page = await signInPage()
+
   const income = await page.$eval(
     '#monthly_total_table_home > tbody > tr:nth-child(1) > td',
     (el) => el.textContent,
