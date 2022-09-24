@@ -2275,6 +2275,18 @@
     "@graphql-tools/utils" "^8.8.0"
     tslib "~2.4.0"
 
+"@graphql-codegen/graphql-modules-preset@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/graphql-modules-preset/-/graphql-modules-preset-2.5.1.tgz#eb0c8c23457be866f7308b23b1d49d9d71d9a791"
+  integrity sha512-eA5G2++Uds11CQuSyJjNo9D5fsd8EiXJZ32hNb9jxlNriGHdwLzPVskSEPGi2avxhqGJG4XH2IZvkg4WTyD1kA==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.6.2"
+    "@graphql-codegen/visitor-plugin-common" "2.12.1"
+    "@graphql-tools/utils" "^8.8.0"
+    change-case-all "1.0.14"
+    parse-filepath "^1.0.2"
+    tslib "~2.4.0"
+
 "@graphql-codegen/plugin-helpers@^2.6.2", "@graphql-codegen/plugin-helpers@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.7.1.tgz#de999bdf8a1485f6f3c4c5f21cfb038e99d67e3e"
@@ -2559,7 +2571,7 @@
     value-or-promise "^1.0.11"
     ws "^8.3.0"
 
-"@graphql-tools/utils@8.12.0", "@graphql-tools/utils@^8.6.5", "@graphql-tools/utils@^8.8.0", "@graphql-tools/utils@^8.9.0":
+"@graphql-tools/utils@8.12.0", "@graphql-tools/utils@^8.12.0", "@graphql-tools/utils@^8.6.5", "@graphql-tools/utils@^8.8.0", "@graphql-tools/utils@^8.9.0":
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.12.0.tgz#243bc4f5fc2edbc9e8fd1038189e57d837cbe31f"
   integrity sha512-TeO+MJWGXjUTS52qfK4R8HiPoF/R7X+qmgtOYd8DTH0l6b+5Y/tlg5aGeUJefqImRq7nvi93Ms40k/Uz4D5CWw==
