@@ -1,0 +1,5 @@
+type MoneyForwardBalance {
+  id: ID!
+  income: Int!
+  expense: Int!
+}

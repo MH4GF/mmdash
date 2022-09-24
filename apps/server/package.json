@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "node -r esbuild-register src/main.ts",
-    "prepare:graphql": "graphql-codegen",
+    "prepare:graphql": "rimraf ./src/**/*.generated.ts && graphql-codegen",
     "prepare": "yarn prepare:graphql"
   },
   "dependencies": {
@@ -15,7 +15,10 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.12.1",
+    "@graphql-codegen/graphql-modules-preset": "^2.5.1",
     "@graphql-codegen/typescript": "^2.7.3",
-    "@graphql-codegen/typescript-resolvers": "^2.7.3"
+    "@graphql-codegen/typescript-resolvers": "^2.7.3",
+    "graphql-codegen-typescript-typedefs": "*",
+    "rimraf": "^3.0.2"
   }
 }
