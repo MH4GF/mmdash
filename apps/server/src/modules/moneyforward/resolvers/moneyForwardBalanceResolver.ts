@@ -1,7 +1,8 @@
-import { QueryResolvers } from "../../../graphql/types.generated";
-import { getBalance } from "../repository";
+import type { QueryResolvers } from '../../../graphql/types.generated'
+import { getBalance } from '../repository'
 
-export const moneyForwardBalanceResolver: QueryResolvers["moneyForwardBalance"] =
-  {
-    resolve: () => getBalance(),
-  };
+export const moneyForwardBalanceResolver: QueryResolvers['moneyForwardBalance'] = {
+  resolve: () => {
+    return getBalance()
+  },
+}

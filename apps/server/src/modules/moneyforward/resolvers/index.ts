@@ -1,1 +1,1 @@
-export * from "./moneyForwardBalanceResolver";
+export * from './moneyForwardBalanceResolver'

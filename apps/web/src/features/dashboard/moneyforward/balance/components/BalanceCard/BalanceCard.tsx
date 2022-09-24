@@ -9,7 +9,7 @@ import {
   StatLabel,
   StatNumber,
 } from '@chakra-ui/react'
-import { FC } from 'react'
+import type { FC } from 'react'
 
 export const BalanceCard: FC = () => {
   return (

@@ -5,6 +5,7 @@ generates:
       - ./src/modules/**/*/types/*.graphql
     config:
       useIndexSignature: true
+      useTypeImports: true
     plugins:
       - typescript
       - typescript-resolvers

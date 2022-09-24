@@ -25,3 +25,5 @@ dist-ssr
 
 */**/*.generated.ts
 */**/coverage/**
+
+*/**/.env
