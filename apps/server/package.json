@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node -r esbuild-register src/main.ts",
     "prepare:graphql": "rimraf ./src/**/*.generated.ts && graphql-codegen",
-    "prepare": "yarn prepare:graphql"
+    "prepare": "yarn prepare:graphql",
+    "test": "jest"
   },
   "dependencies": {
     "apollo-server": "^3.10.2",
@@ -18,7 +19,10 @@
     "@graphql-codegen/graphql-modules-preset": "^2.5.1",
     "@graphql-codegen/typescript": "^2.7.3",
     "@graphql-codegen/typescript-resolvers": "^2.7.3",
+    "@types/jest": "^29.0.3",
+    "esbuild-jest": "^0.5.0",
     "graphql-codegen-typescript-typedefs": "*",
+    "jest": "^29.0.3",
     "rimraf": "^3.0.2"
   }
 }
