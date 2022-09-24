@@ -1,12 +1,12 @@
-import { ApolloServer, gql } from "apollo-server";
+import { readFileSync } from "fs";
 
-const typeDefs = gql`
-  type Query {
-    hello: String!
-  }
-`;
+import { ApolloServer } from "apollo-server";
 
-const resolvers = {
+import type { Resolvers } from "./graphql/resolversTypes.generated";
+
+const typeDefs = readFileSync("./graphql/schema.graphql", "utf8");
+
+const resolvers: Resolvers = {
   Query: {
     hello: () => "world",
   },

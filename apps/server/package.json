@@ -3,12 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "node -r esbuild-register src/main.ts"
+    "dev": "node -r esbuild-register src/main.ts",
+    "prepare:graphql": "graphql-codegen",
+    "prepare": "yarn prepare:graphql"
   },
   "dependencies": {
     "apollo-server": "^3.10.2",
     "esbuild": "^0.15.9",
     "esbuild-register": "^3.3.3",
     "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.12.1",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-resolvers": "^2.7.3"
   }
 }
